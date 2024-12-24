@@ -2,712 +2,1209 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-  <title>About Me</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- Favicons -->
-  <link href="assets/img/icon2.jpeg" rel="icon">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <!--
+    - #MAIN
+  -->
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <main>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Krishna Raj</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/krishna-raz" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/iamkrishnaraj/" target="_blank" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://www.instagram.com/iamkrishna_raj/" target="_blank" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a href="https://www.facebook.com/iamrajkrishna" target="_blank" class="facebook"><i
-              class="bx bxl-facebook"></i></a>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/krishna.png" alt="Krishna Raj" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Krishna Raj</h1>
+
+          <p class="title">Web developer</p>
         </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
 
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-          <!-- <li><a href="#services"><i class="bx bx-server"></i> Services</a></li> -->
-          <!-- <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li> -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:krishnaraj143007@gmail.com" class="contact-link">krishnaraj143007@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+918287074393" class="contact-link">+91 8287074393</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2002-06-23">June 23, 2002</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Darbhanga, Bihar, India</address>
+            </div>
+
+          </li>
 
         </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+        <div class="separator"></div>
 
-    </div>
-  </header><!-- End Header -->
+        <ul class="social-list">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Krishna Raj</h1>
-      <p>I'm <span class="typed" data-typed-items="Student, Developer, Photographer"></span></p>
-    </div>
-  </section><!-- End Hero -->
+          <li class="social-item">
+            <a href="https://linkedin.com/in/iamkrishnaraj" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-  <main id="main">
+          <li class="social-item">
+            <a href="https://github.com/krishna-raz" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am currently second-years Computer Science Engineering Student undergrad at Bakhtiyarpur College of
-            Engineering, Patna.</p>
-        </div>
+        </ul>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/aa1.jpeg" width="270" height="100" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer & Web Developer</h3>
-            <p class="font-italic">
-              Being passionate about technology, having a desire to learn and explore more makes me what I am.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 3-sep-2001</li>
-                  <!--<li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com</li> -->
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +91 7762974980</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Address:</strong> Darbhanga, Bihar</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 23</li>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li> -->
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> krishnaraj143007@gmail.com</li>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li> -->
-                </ul>
-              </div>
-            </div>
-            <p>
-              I like to do new things and expand my knowledge with any sort of opportunity which comes my way. I am
-              currently 2nd Year Computer Science Engineering Student. I am interested in Artificial Intelligence,
-              Machine Learning, Django, Android, and Web Development. He loves to combine his passion with my skills to
-              build new products.
-            </p>
-          </div>
-        </div>
 
-      </div>
-    </section><!-- End About Section -->
+    </aside>
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
-        <!--
-   <div class="section-title"> 
-          <h2>Hello</h2>
-          <p>krishna</p>
-        </div>
 
-        <div class="row no-gutters">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+    <!--
+      - #main-content
     -->
 
+    <div class="main-content">
 
-    </section><!-- End Facts Section -->
+      <!--
+        - #NAVBAR
+      -->
 
+      <nav class="navbar">
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+        <ul class="navbar-list">
 
-        <head>
-          <style>
-           
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
 
-            .myskil {
-              display: flex;
-              align-items: center;
-              background-color: #f0f0f0;
-              height: 100px;
-              padding: 20px;
-            }
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
 
-           
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
 
-            .main {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              grid-gap: 20px;
-              padding: 20px;
-            }
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Achievement</button>
+          </li>
 
-            .tile {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              background-color: #ffffff;
-              height: 200px;
-            }
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
 
-            .icon {
-              width: 100px;
-              height: 100px;
-            }
+        </ul>
 
-            .skill {
-              font-family: Arial, sans-serif;
-              font-size: 18px;
-              margin-top: 10px;
-            }
+      </nav>
 
 
-            .copy {
-              font-family: Arial, sans-serif;
-              font-size: 14px;
-              color: #f7f2f2;
-            }
-          </style>
-        </head>
 
-        <body>
-          <!-- <div class="myskil">
-            <img src="profile.jpg" alt="Profile picture" class="profile">
-            <div class="name">Antonio Rogers</div>
-          </div> -->
-          <div class="section-title">
-            <h2>skill</h2>
-          <div class="main">
-            <div class="tile">
-              <img src="assets/img/skill/html.png" alt="HTML icon" class="icon">
-              <div class="skill">HTML</div>
-            </div>
-            <div class="tile">
-              <img src="assets/img/skill/css.png" alt="CSS icon" class="icon">
-              <div class="skill">CSS</div>
-            </div>
-            <div class="tile">
-              <img src="assets/img/skill/javascript-logo.png" alt="Javascript icon" class="icon">
-              <div class="skill">Javascript</div>
-            </div>
-            <div class="tile">
-              <img src="assets/img/skill/react.png" alt="React icon" class="icon">
-              <div class="skill">React</div>
-            </div>
-            <div class="tile">
-              <img src="assets/img/skill/node.png" alt="Node.js icon" class="icon">
-              <div class="skill">Node.js</div>
-            </div>
-            <div class="tile">
-              <img src="assets/img/skill/mongo.png" alt="MongoDB icon" class="icon">
-              <div class="skill">MongoDB</div>
-            </div>
-            <div class="tile">
-              <img src="/assets/img/skill/mysql.png" alt="PostgreSQL icon" class="icon">
-              <div class="skill">Mysql</div>
-            </div>
-            <div class="tile">
-              <img src="assets/img/skill/git.png" alt="Git icon" class="icon">
-              <div class="skill">Git</div>
-            </div>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I'm Krishna Raj, a passionate Full Stack Developer and a 2x Hackathon Winner from Darbhanga, Bihar. I specialize in building responsive, user-friendly web applications and solving real-world problems with innovative technical solutions.
+          </p>
+        
+          <p>
+            With a strong foundation in HTML, CSS, JavaScript, Node.js, and MongoDB, I have worked on various projects ranging from home automation apps to wool management systems for industry use. I take pride in crafting applications that are not only functional but also visually appealing and intuitive. My aim is to deliver products that effectively address client needs while ensuring the best user experience.
+          </p>
+        </section>
+        
+
+
+        <!-- teck stack  -->
+        <section class="tech-stack">
+          <h2 class="h3 tech-stack">My skills </h2>
+        
+          <!-- Filter Buttons -->
+          <ul class="tech-list">
+            <li class="tech-item">
+              <button class="active" tech-filter-btn="all">All</button>
+            </li>
+            <li class="tech-item">
+              <button tech-filter-btn="frontend">Frontend</button>
+            </li>
+            <li class="tech-item">
+              <button tech-filter-btn="backend">Backend</button>
+            </li>
+            <li class="tech-item">
+              <button tech-filter-btn="others">Others</button>
+            </li>
+          </ul>
+        
+          <!-- Dropdown Filter -->
+          <div class="tech-select-box">
+            <button class="tech-select" tech-select>
+              <div class="tech-value" tech-select-value>Select category</div>
+              <div class="tech-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="tech-dropdown-list">
+              <li class="tech-item">
+                <button tech-select-item="all">All</button>
+              </li>
+              <li class="tech-item">
+                <button tech-select-item="frontend">Frontend</button>
+              </li>
+              <li class="tech-item">
+                <button tech-select-item="backend">Backend</button>
+              </li>
+              <li class="tech-item">
+                <button tech-select-item="others">Others</button>
+              </li>
+            </ul>
           </div>
         
-        </body>
-      </div>
-    </section><!-- End Skills Section -->
+          <!-- Tech Stack Projects -->
+          <ul class="project-list" id="skill-list" style="display: ruby;">
+            <!-- Frontend Projects -->
+            <li class="skill active" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/html-5.webp" alt="HTML5 Logo" loading="lazy">
+                <figcaption>
+                  <h4>HTML5</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/css3.webp" alt="CSS3 Logo" loading="lazy">
+                <figcaption>
+                  <h4>CSS3</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/javascript--v1.webp" alt="JavaScript Logo" loading="lazy">
+                <figcaption>
+                  <h4>JavaScript</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/react.webp" alt="ReactJS Logo" loading="lazy">
+                <figcaption>
+                  <h4>ReactJS</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/bootstrap.webp" alt="Bootstrap Logo" loading="lazy">
+                <figcaption>
+                  <h4>Bootstrap</h4>
+                </figcaption>
+              </figure>
+            </li>
+          
+            <!-- Backend Projects -->
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/node-js.webp" alt="Node.js Logo" loading="lazy">
+                <figcaption>
+                  <h4>Node.js</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/express-js.webp" alt="Express.js Logo" loading="lazy">
+                <figcaption>
+                  <h4>Express.js</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/mogodb.webp" alt="MongoDB Logo" loading="lazy">
+                <figcaption>
+                  <h4>MongoDB</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/mysql-logo.webp" alt="MySQL Logo" loading="lazy">
+                <figcaption>
+                  <h4>MySQL</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/php-logo.webp" alt="PHP Logo" loading="lazy">
+                <figcaption>
+                  <h4>PHP</h4>
+                </figcaption>
+              </figure>
+            </li>
+          
+            <!-- Other Projects -->
+            <li class="project-item" tech-category="others">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/github.webp" alt="GitHub Logo" loading="lazy">
+                <figcaption>
+                  <h4>GitHub</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="others">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/android-studio.webp" alt="Android Studio Logo" loading="lazy">
+                <figcaption>
+                  <h4>Android Studio</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="others">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/git.webp" alt="Git Logo" loading="lazy">
+                <figcaption>
+                  <h4>Git</h4>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          
+        </section>
+        
+        <!-- teck stack end -->
+       
+        
+         
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>4th Year CSE undergrad at Bakhtiyarpur College of Engineering, Patna.
-            A C++ geek. Front-End Web Developer and Back-End.
-            Loves animations and Photography.</p>
-        </div>
+      
+    
+        <!-- new shgjskdhjsd -->
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Krishna Raj</h4>
-              <p><em> Winner of Smart India Hackathon '22. Proficient in Web Development, Flutter, Programming in C &
-                  C++ and Cloud Computing. Member of GDSC BCE Patna.</em></p>
-              <ul>
-                <!-- <li>Portland par 127,Orlando, FL</li> -->
-                <li>+91 7762974980</li>
-                <li>krishnaraj143007@gmail.com</li>
-              </ul>
-            </div>
-            <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"> -->
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>10+2</h4>
-              <h5>2017 - 2019</h5>
-              <p><em>R. B. Jalan Bela College</em></p>
-              <p> </p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Technology</h4>
-              <h5>2020 - 2024</h5>
-              <p><em>Bakhtiyarpur College of Engineering, Patna.</em></p>
-              <!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-            </div>
-          </div>
-          <!--
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
 
-      </div>
-    </section>
-    -->
-          <!-- End Resume Section -->
+        <section class="Smartih">
 
-          <!-- ======= Portfolio Section ======= -->
-          <section id="portfolio" class="portfolio section-bg">
-            <div class="container">
+          <h3 class="h3 Smartih-title">Achievement</h3>
 
-              <div class="section-title">
-                <h2>My Accomplishments</h2>
-                <!-- <h2>Our Some Achievement</h2> -->
-                <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-              </div>
+          <ul class="Smartih-list has-scrollbar">
 
-              <div class="row" data-aos="fade-up">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Achievement</li>
-                    <li data-filter=".filter-card">Certificate
-                    </li>
-                    <li data-filter=".filter-web">Project</li>
-                  </ul>
-                </div>
-              </div>
+            <li class="Smartih-item">
+              <div class="content-card" data-Smartih-item>
 
-              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-                <!-- Achievement -->
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/Shi/1.JPG" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/Shi/1.JPG" data-gall="portfolioGallery" class="venobox" title="App 1"><i
-                          class="bx bx-plus"></i></a>
-                      <a href="SihWinner.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
+                <figure class="achievement-banner-box">
+                  <img src="./assets/images/SIH/sih_2022.jpg" alt="Smart India Hackathon 2022" loading="lazy">
+                </figure>
+          
+                <div class="achievement-content">
+                  <div class="achievement-meta">
+                    <p class="achievement-category">Winner</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-08-01">Aug 2022</time>
                   </div>
+          
+                  <h3 class="h3 achievement-item-title">Smart India Hackathon 2022</h3>
+          
+                  <p class="achievement-text">
+                    Team Leader for a Flutter-based mobile application project for the Ministry of Social Justice and Empowerment, Government of India.
+                    The project focused on developing a vocational training application for visually impaired people.
+                  </p>
+                </div>
+                <h4 class="h4 Smartih-item-title" data-Smartih-title></h4>
+
+                <div class="Smartih-text" data-Smartih-text>
+                  
                 </div>
 
+              </div>
+            </li>
 
-                <!-- Certificate -->
-                <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/Shi/2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/Shi/2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i
-                          class="bx bx-plus"></i></a>
-                      <a href="SihWinner.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
+            <li class="Smartih-item">
+              <div class="content-card" data-Smartih-item>
+
+                <figure class="achievement-banner-box">
+                  <img src="./assets/images/SIH/sih-2023.JPG" alt="Smart India Hackathon 2023" loading="lazy">
+                </figure>
+
+                <div class="achievement-content">
+                  <div class="achievement-meta">
+                    <p class="achievement-category">Winner</p>
+                    <span class="dot"></span>
+                    <time datetime="2023-12-01">Dec 2023</time>
                   </div>
-                </div> -->
+          
+                  <h3 class="h3 achievement-item-title">Smart India Hackathon 2023</h3>
+          
+                  <p class="achievement-text">
+                    Team Leader for a web-based mobile application project for the Ministry of Textiles, Government of India.
+                    Focused on developing a comprehensive Wool Management System for various roles in the wool industry.
+                  </p>
+                </div>
 
-                <!-- Project -->
-                <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/Shi/2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/peeortfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="Card 2"><i class="bx bx-plus"></i></a>
-                      <a href="SihWinner.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
+              </div>
+            </li>
+
+         
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Smartih modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="Smartih-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Krishna Raj</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                 krishna raj is a student of b.tech in computer science and engineering at b.s.a. college of engineering and technology.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+     
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bihar Engineering University</h4>
+              <span>2020 — 2024</span>
+              <p class="timeline-text">
+                B.Tech in Computer Science Engineering with a GPA of 7.51. Studied at Bakhtiyarpur College of Engineering, Patna.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intermediate (Bihar School Examination Board)</h4>
+              <span>2017 — 2019</span>
+              <p class="timeline-text">
+                Completed with a grade of 61% at RB Jalan Bela College, Darbhanga. Course focused on Physics, Chemistry, and Maths.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Matriculation (Bihar School Examination Board)</h4>
+              <span>2017</span>
+              <p class="timeline-text">
+                Completed with a grade of 61.8% at C.K.N.HS SINGHWARA, Darbhanga.
+              </p>
+            </li>
+          </ol>
+        </section>
+        
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Database Administrator Intern</h4>
+              <span>Jan 2023 — Mar 2023</span>
+              <p class="timeline-text">
+                Gained foundational knowledge in database management and administration during an internship at North Bihar Power Distribution Company Limited. Worked on the Electric Billing Management System using HTML, CSS, JavaScript, Bootstrap, and SQL.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Web Developer Intern</h4>
+              <span>Apr 2022 — May 2022</span>
+              <p class="timeline-text">
+                Completed a 4-week intensive internship at Suven Consultants & Technology Pvt. Ltd., gaining hands-on experience in front-end web development using the Bootstrap framework.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <a href="./assets/resume/your_resume.pdf" download class="download-btn">
+          <button class="btn">
+            <ion-icon name="download-outline"></ion-icon>
+            Download Resume
+          </button>
+        </a>
+        
+        <section class="tech-stack">
+          <h2 class="h2 tech-stack">My skills </h2>
+        
+          <!-- Filter Buttons -->
+          <ul class="tech-list">
+            <li class="tech-item">
+              <button class="active" tech-filter-btn="all">All</button>
+            </li>
+            <li class="tech-item">
+              <button tech-filter-btn="frontend">Frontend</button>
+            </li>
+            <li class="tech-item">
+              <button tech-filter-btn="backend">Backend</button>
+            </li>
+            <li class="tech-item">
+              <button tech-filter-btn="others">Others</button>
+            </li>
+          </ul>
+        
+          <!-- Dropdown Filter -->
+          <div class="tech-select-box">
+            <button class="tech-select" tech-select>
+              <div class="tech-value" tech-select-value>Select category</div>
+              <div class="tech-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="tech-dropdown-list">
+              <li class="select-item">
+                <button tech-select-item="all">All</button>
+              </li>
+              <li class="tech-item">
+                <button tech-select-item="frontend">Frontend</button>
+              </li>
+              <li class="tech-item">
+                <button tech-select-item="backend">Backend</button>
+              </li>
+              <li class="tech-item">
+                <button tech-select-item="others">Others</button>
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Tech Stack Projects -->
+          <ul class="project-list" id="skill-list" style="display: ruby;">
+            <!-- Frontend Projects -->
+            <li class="skill active" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/html-5.webp" alt="HTML5 Logo" loading="lazy">
+                <figcaption>
+                  <h4>HTML5</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/css3.webp" alt="CSS3 Logo" loading="lazy">
+                <figcaption>
+                  <h4>CSS3</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/javascript--v1.webp" alt="JavaScript Logo" loading="lazy">
+                <figcaption>
+                  <h4>JavaScript</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/react.webp" alt="ReactJS Logo" loading="lazy">
+                <figcaption>
+                  <h4>ReactJS</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="frontend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/bootstrap.webp" alt="Bootstrap Logo" loading="lazy">
+                <figcaption>
+                  <h4>Bootstrap</h4>
+                </figcaption>
+              </figure>
+            </li>
+          
+            <!-- Backend Projects -->
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/node-js.webp" alt="Node.js Logo" loading="lazy">
+                <figcaption>
+                  <h4>Node.js</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/express-js.webp" alt="Express.js Logo" loading="lazy">
+                <figcaption>
+                  <h4>Express.js</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/mogodb.webp" alt="MongoDB Logo" loading="lazy">
+                <figcaption>
+                  <h4>MongoDB</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/mysql-logo.webp" alt="MySQL Logo" loading="lazy">
+                <figcaption>
+                  <h4>MySQL</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="backend">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/php-logo.webp" alt="PHP Logo" loading="lazy">
+                <figcaption>
+                  <h4>PHP</h4>
+                </figcaption>
+              </figure>
+            </li>
+          
+            <!-- Other Projects -->
+            <li class="project-item" tech-category="others">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/github.webp" alt="GitHub Logo" loading="lazy">
+                <figcaption>
+                  <h4>GitHub</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="others">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/android-studio.webp" alt="Android Studio Logo" loading="lazy">
+                <figcaption>
+                  <h4>Android Studio</h4>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item" tech-category="others">
+              <figure class="tech-img">
+                <img src="./assets/images/skill/git.webp" alt="Git Logo" loading="lazy">
+                <figcaption>
+                  <h4>Git</h4>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          
+        </section>
+        
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>others</button>
+            </li>
+
+           
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+              
+                            <li class="select-item">
+                              <button data-select-item>Applications</button>
+                            </li>
+
+              <li class="select-item">
+                <button data-select-item>others</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                </div> -->
 
-                <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app"> 
-            <div class="portfolio-wrap">
-              <img src="assetsee/img/portfolioe/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/peeortfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="SihWinner.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
- -->
-                <!-- 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+                  <img src="./assets/images/voco.png" alt="voco" loading="lazy">
+                  <div class="btns">
+                    <a href="https://drive.google.com/file/d/1G2OAgv496ZIgfTvQDB9stnZZdOtdA90W/view" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href="https://github.com/krishna-raz/Voco_App" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                  </div>     
+                </figure>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+                <h3 class="project-title">voco</h3>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+                <p class="project-category">Applications</p>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+              </a>
+            </li>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+             
 
-              </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-            </div>
-          </section><!-- End Portfolio Section -->
+                  <img src="./assets/images/kintkraf.png" alt="kintkraf" loading="lazy">        
+                  <div class="btns">
+                    <a href="https://knitkraft.onrender.com/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href="https://github.com/krishna-raz/KnitKraft" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                  </div>     
+                </figure>
 
-          <!-- ======= Services Section ======= 
-    <section id="services" class="services">
-      <div class="container">
+                
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+                <h3 class="project-title">KnitKraft</h3>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
+                <p class="project-category">Web development</p>
+               
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+             
 
-      </div>
-    </section> End Services Section -->
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-          <!-- ======= Testimonials Section ======= 
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
+                  <img src="./assets/images/game.png" alt="kintkraf" loading="lazy">        
+                  <div class="btns">
+                    <a href="https://krishna-raz.github.io/BubbleGame/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href=https://github.com/krishna-raz/BubbleGame" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                  </div>     
+                </figure>
 
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+                
 
-        <div class="owl-carousel testimonials-carousel">
+                <h3 class="project-title">BubbleGame</h3>
 
-          <div class="testimonial-item" data-aos="fade-up">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
+                <p class="project-category">Web development</p>
+               
+            </li>
+            <li class="project-item  active" data-filter-item data-category="others">
+             
 
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
+                  <img src="./assets/images/iot.png" alt="kintkraf" loading="lazy">        
+                  <div class="btns">
+                    <a href="https://homeauto.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href="https://github.com/krishna-raz/Home-Automation" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                  </div>     
+                </figure>
 
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
+                
 
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
+                <h3 class="project-title">Home-Automation</h3>
 
-        </div>
+                <p class="project-category">Web development</p>
+               
+            </li>
 
-      </div>
-    </section>-->
-          <!-- End Testimonials Section -->
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
 
-          <!-- ======= Contact Section ======= 
-    <section id="contact" class="contact">
-      <div class="container">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
 
-        <div class="row" data-aos="fade-in">
+                <h3 class="project-title">Fundo</h3>
 
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
+                <p class="project-category">Web design</p>
 
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
+              </a>
+            </li>
 
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-          </div>
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #achievement
+      -->
+
+      <article class="achievement" data-page="achievement">
+
+        <header>
+          <h2 class="h2 article-title">Achievements</h2>
+        </header>
+      
+        <section class="achievement-posts">
+          <ul class="achievement-posts-list">
+      
+            <!-- Smart India Hackathon 2022 -->
+            <li class="achievement-post-item">
+              <a href="#" onclick="openModal('sih2022')">
+      
+                <figure class="achievement-banner-box">
+                  <img src="./assets/images/SIH/sih_2022.jpg" alt="Smart India Hackathon 2022" loading="lazy">
+                </figure>
+      
+                <div class="achievement-content">
+                  <div class="achievement-meta">
+                    <p class="achievement-category">Winner</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-08-01">Aug 2022</time>
+                  </div>
+      
+                  <h3 class="h3 achievement-item-title">Smart India Hackathon 2022</h3>
+      
+                  <p class="achievement-text">
+                    Team Leader for a Flutter-based mobile application project for visually impaired people.
+                  </p>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
+      
+              </a>
+            </li>
+      
+            <!-- Smart India Hackathon 2023 -->
+            <li class="achievement-post-item">
+              <a href="#" onclick="openModal('sih2023')">
+      
+                <figure class="achievement-banner-box">
+                  <img src="./assets/images/SIH/sih-2023.JPG" alt="Smart India Hackathon 2023" loading="lazy">
+                </figure>
+      
+                <div class="achievement-content">
+                  <div class="achievement-meta">
+                    <p class="achievement-category">Winner</p>
+                    <span class="dot"></span>
+                    <time datetime="2023-12-01">Dec 2023</time>
+                  </div>
+      
+                  <h3 class="h3 achievement-item-title">Smart India Hackathon 2023</h3>
+      
+                  <p class="achievement-text">
+                    Team Leader for a web-based mobile application project focused on Wool Management.
+                  </p>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+      
+              </a>
+            </li>
+      
+          </ul>
+        </section>
+      </article>
+      
+      <!-- Popup/Modal -->
+      <div id="modal" class="modal-container">
+        <div class="overlay" onclick="closeModal()"></div>
+      
+        <div class="modal-content">
+          <span class="modal-close-btn" onclick="closeModal()">✖</span>
+      
+          <div id="sih2022" class="modal-details hidden">
+            <div class="portfolio-details-carousel">
+              <img src="./assets/images/SIH/sih_2022.jpg" class="img-fluid" alt="">
+            </div>
+            <h3>Smart India Hackathon 2022</h3>
+            <p>
+              Our project focused on developing a Vocational Training Application for visually impaired people under the Ministry of Social Justice and Empowerment.
+            </p>
           </div>
-
+      
+          <div id="sih2023" class="modal-details hidden">
+            <div class="portfolio-details-carousel">
+              <img src="./assets/images/SIH/sih-2023.JPG" class="img-fluid" alt="">
+            </div>
+            <h3>Smart India Hackathon 2023</h3>
+            <p>
+              Our project focused on developing a comprehensive Wool Management System under the Ministry of Textiles.
+            </p>
+          </div>
+      
         </div>
-
       </div>
-    </section>-->
-          <!-- End Contact Section -->
+      
 
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>krishna Raj</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="#">Krishna Raj</a>
-      </div>
+
+
+<script>
+  function openModal(id) {
+  document.getElementById('modal').classList.add('active');
+
+  // Show the specific modal content
+  const modalDetails = document.querySelectorAll('.modal-details');
+  modalDetails.forEach(detail => detail.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+}
+
+</script>
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  </script>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/skill.js""></script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
 </html>
+
+
+

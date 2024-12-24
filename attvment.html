@@ -1,0 +1,176 @@
+<article class="achievement" data-page="achievement">
+
+    <header>
+      <h2 class="h2 article-title">Achievements</h2>
+    </header>
+  
+    <section class="achievement-posts">
+      <ul class="achievement-posts-list">
+  
+        <!-- Smart India Hackathon 2022 -->
+        <li class="achievement-post-item">
+          <a href="#" onclick="openModal('sih2022')">
+  
+            <figure class="achievement-banner-box">
+              <img src="./assets/images/SIH/sih_2022.jpg" alt="Smart India Hackathon 2022" loading="lazy">
+            </figure>
+  
+            <div class="achievement-content">
+              <div class="achievement-meta">
+                <p class="achievement-category">Winner</p>
+                <span class="dot"></span>
+                <time datetime="2022-08-01">Aug 2022</time>
+              </div>
+  
+              <h3 class="h3 achievement-item-title">Smart India Hackathon 2022</h3>
+  
+              <p class="achievement-text">
+                Team Leader for a Flutter-based mobile application project for visually impaired people.
+              </p>
+            </div>
+  
+          </a>
+        </li>
+  
+        <!-- Smart India Hackathon 2023 -->
+        <li class="achievement-post-item">
+          <a href="#" onclick="openModal('sih2023')">
+  
+            <figure class="achievement-banner-box">
+              <img src="./assets/images/SIH/sih-2023.JPG" alt="Smart India Hackathon 2023" loading="lazy">
+            </figure>
+  
+            <div class="achievement-content">
+              <div class="achievement-meta">
+                <p class="achievement-category">Winner</p>
+                <span class="dot"></span>
+                <time datetime="2023-12-01">Dec 2023</time>
+              </div>
+  
+              <h3 class="h3 achievement-item-title">Smart India Hackathon 2023</h3>
+  
+              <p class="achievement-text">
+                Team Leader for a web-based mobile application project focused on Wool Management.
+              </p>
+            </div>
+  
+          </a>
+        </li>
+  
+      </ul>
+    </section>
+  </article>
+  
+  <!-- Popup/Modal -->
+  <div id="modal" class="modal-container">
+    <div class="overlay" onclick="closeModal()"></div>
+  
+    <div class="modal-content">
+      <span class="modal-close-btn" onclick="closeModal()">✖</span>
+  
+      <div id="sih2022" class="modal-details hidden">
+        <div class="portfolio-details-carousel">
+          <img src="./assets/images/SIH/sih_2022.jpg" class="img-fluid" alt="">
+        </div>
+        <h3>Smart India Hackathon 2022</h3>
+        <p>
+          Our project focused on developing a Vocational Training Application for visually impaired people under the Ministry of Social Justice and Empowerment.
+        </p>
+      </div>
+  
+      <div id="sih2023" class="modal-details hidden">
+        <div class="portfolio-details-carousel">
+          <img src="./assets/images/SIH/sih-2023.JPG" class="img-fluid" alt="">
+        </div>
+        <h3>Smart India Hackathon 2023</h3>
+        <p>
+          Our project focused on developing a comprehensive Wool Management System under the Ministry of Textiles.
+        </p>
+      </div>
+  
+    </div>
+  </div>
+
+  
+  <style>
+    /* Modal Container */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.modal-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 80%;
+  border-radius: 10px;
+  z-index: 1001;
+  overflow-y: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.portfolio-details-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+
+  <script>
+    function openModal(id) {
+  document.getElementById('modal').classList.add('active');
+
+  // Show the specific modal content
+  const modalDetails = document.querySelectorAll('.modal-details');
+  modalDetails.forEach(detail => detail.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+}
+
+  </script>
